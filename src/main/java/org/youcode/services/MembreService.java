@@ -18,4 +18,6 @@ public interface MembreService {
 
     void validateMembre(Membre membre);
 
+    void deleteById(UUID id);
+
 }

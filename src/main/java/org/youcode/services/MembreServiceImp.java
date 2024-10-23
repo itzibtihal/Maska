@@ -1,6 +1,7 @@
 package org.youcode.services;
 
 
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -44,6 +45,15 @@ public class MembreServiceImp implements MembreService {
         return membreRepository.save(membre);
     }
 
+
+    @Override
+    @Transactional
+    public void deleteById(UUID id) {
+        if (!membreRepository.existsById(id)) {
+            throw new EntityNotFoundException("Membre not found with ID: " + id);
+        }
+        membreRepository.deleteById(id);
+    }
 
 
     @Override
