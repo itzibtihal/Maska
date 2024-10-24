@@ -72,6 +72,10 @@ In Spring IoC (Inversion of Control) Container is the core of Spring Framework. 
 ### Spring Beans
 
 ### Bean Scopes
+A Spring Bean Scope defines the lifecycle and visibility of a bean in a Spring container. When a bean is defined, it acts as a recipe for creating instances of a class, and you can control how many instances are created and how they behave. Spring provides six different scopes, four of which are specific to web-aware applications. You can also create custom scopes to manage how beans are instantiated and utilized. Scopes allow developers to configure the lifespan and accessibility of beans, without embedding this logic at the Java class level.
+
+![image](https://github.com/user-attachments/assets/b8fbbb56-01f2-4e37-9e52-c426c85e377c)
+
 
 ### ApplicationContext
 
