@@ -17,6 +17,8 @@ such as creating, viewing, updating, and deleting users through a web interface.
 - [Spring MVC](#spring-mvc)
 - [Installation and Setup](#installation-and-setup)
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Project Structure
 
 
@@ -48,6 +50,7 @@ such as creating, viewing, updating, and deleting users through a web interface.
 
 - **postgresql.yml**: PostgreSQL database configuration file.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Dependency Injection (DI)
 Dependency Injection is the main functionality provided by Spring IOC(Inversion of Control). The Spring-Core module is responsible for injecting dependencies through either Constructor or Setter methods. The design principle of Inversion of Control emphasizes keeping the Java classes independent of each other and the container frees them from object creation and maintenance. These classes, managed by Spring, must adhere to the standard definition of Java-Bean. Dependency Injection in Spring also ensures loose coupling between the classes. There are two types of Spring Dependency Injection.
@@ -56,6 +59,8 @@ Dependency Injection is the main functionality provided by Spring IOC(Inversion 
 
 2 - Constructor Dependency Injection (CDI)
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Inversion of Control (IoC)
 
 Inversion of Control (IoC) is a design principle used in software development that reverses the flow of control in a program. 
@@ -69,17 +74,23 @@ In Spring IoC (Inversion of Control) Container is the core of Spring Framework. 
 
 * Managing dependencies, 
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Spring Beans
 Here’s a definition of beans in the Spring Framework documentation:
 
 In Spring, the objects that form the backbone of my application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Bean Scopes
 A Spring Bean Scope defines the lifecycle and visibility of a bean in a Spring container. When a bean is defined, it acts as a recipe for creating instances of a class, and you can control how many instances are created and how they behave. Spring provides six different scopes, four of which are specific to web-aware applications. You can also create custom scopes to manage how beans are instantiated and utilized. Scopes allow developers to configure the lifespan and accessibility of beans, without embedding this logic at the Java class level.
 
 ![image](https://github.com/user-attachments/assets/b8fbbb56-01f2-4e37-9e52-c426c85e377c)
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### ApplicationContext
 
@@ -103,6 +114,7 @@ ApplicationContext is a central interface in the Spring Framework that provides 
 * Mixed Configuration: Combines XML, annotations, and Java-based approaches as needed in a single application.
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Component Scanning and Stereotype Annotations
  **Component Scanning** is a feature provided by Spring that automatically detects and registers beans in the application context. It eliminates the need to define beans explicitly in the Spring configuration file, making the application more maintainable and scalable. Component scanning is enabled by adding the `<context:component-scan>` element to the Spring configuration file, which specifies the base package(s) to scan for components.
@@ -119,10 +131,16 @@ ApplicationContext is a central interface in the Spring Framework that provides 
 * ***@Autowired***: Indicates that a dependency should be automatically injected by Spring.
 * ***...***: There are many other stereotype annotations available in Spring, each serving a specific purpose in the application context.
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Spring Data JPA
 Spring Data JPA is a part of the Spring Framework that simplifies data access by providing a set of interfaces and methods to interact with databases using the Java Persistence API (JPA), allowing developers to perform CRUD operations with minimal boilerplate code
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Spring MVC
 Spring MVC is a part of the Spring Framework that simplifies the development of web applications by providing a Model-View-Controller architecture. It allows developers to create web applications using a variety of view technologies, such as JSP, Thymeleaf, and FreeMarker, and provides support for handling web requests, form submissions, and data binding.
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Installation and Setup
