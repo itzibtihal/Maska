@@ -91,7 +91,11 @@ ApplicationContext is a central interface in the Spring Framework that provides 
 * Access to various kinds of resources, such as URLs or files.
 * Integration with web applications through specialized contexts (like WebApplicationContext).
 
-  There are several types of configuration in Spring:
+
+
+  **There are several types of configuration in Spring:**
+
+
 
 * XML Configuration: Beans are defined in an external XML file, such as applicationContext.xml.
 * Annotation-based Configuration: Uses annotations like @Component, @Autowired, and @Service directly in the Java code to manage beans and dependencies.
@@ -103,7 +107,9 @@ ApplicationContext is a central interface in the Spring Framework that provides 
 ### Component Scanning and Stereotype Annotations
 
 ### Spring Data JPA
+Spring Data JPA is a part of the Spring Framework that simplifies data access by providing a set of interfaces and methods to interact with databases using the Java Persistence API (JPA), allowing developers to perform CRUD operations with minimal boilerplate code
 
 ### Spring MVC
+Spring MVC is a part of the Spring Framework that simplifies the development of web applications by providing a Model-View-Controller architecture. It allows developers to create web applications using a variety of view technologies, such as JSP, Thymeleaf, and FreeMarker, and provides support for handling web requests, form submissions, and data binding.
 
 ### Installation and Setup
