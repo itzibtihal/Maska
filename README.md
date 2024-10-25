@@ -105,6 +105,19 @@ ApplicationContext is a central interface in the Spring Framework that provides 
 
 
 ### Component Scanning and Stereotype Annotations
+ **Component Scanning** is a feature provided by Spring that automatically detects and registers beans in the application context. It eliminates the need to define beans explicitly in the Spring configuration file, making the application more maintainable and scalable. Component scanning is enabled by adding the `<context:component-scan>` element to the Spring configuration file, which specifies the base package(s) to scan for components.
+ 
+ **Stereotype Annotations**
+ in Spring are special annotations that indicate the role of a class within the application context
+ Such as :
+* ***@Component***: Indicates that a class is a Spring-managed component.
+* ***@Repository***: Indicates that a class is a Spring-managed repository, typically used for database access.
+* ***@Service***: Indicates that a class is a Spring
+* ***@Controller***: Indicates that a class is a Spring-managed controller in a Spring MVC application.
+* ***@Configuration***: Indicates that a class is a Spring configuration class that defines beans and their dependencies.
+* ***@Bean***: Indicates that a method in a configuration class returns a bean to be managed by the Spring container.
+* ***@Autowired***: Indicates that a dependency should be automatically injected by Spring.
+* ***...***: There are many other stereotype annotations available in Spring, each serving a specific purpose in the application context.
 
 ### Spring Data JPA
 Spring Data JPA is a part of the Spring Framework that simplifies data access by providing a set of interfaces and methods to interact with databases using the Java Persistence API (JPA), allowing developers to perform CRUD operations with minimal boilerplate code
