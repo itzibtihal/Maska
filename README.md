@@ -75,7 +75,6 @@ Here’s a definition of beans in the Spring Framework documentation:
 In Spring, the objects that form the backbone of my application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
 
 
-
 ### Bean Scopes
 A Spring Bean Scope defines the lifecycle and visibility of a bean in a Spring container. When a bean is defined, it acts as a recipe for creating instances of a class, and you can control how many instances are created and how they behave. Spring provides six different scopes, four of which are specific to web-aware applications. You can also create custom scopes to manage how beans are instantiated and utilized. Scopes allow developers to configure the lifespan and accessibility of beans, without embedding this logic at the Java class level.
 
