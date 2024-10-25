@@ -1,0 +1,30 @@
+***L'injection de dépendances (DI)
+ (DI) gérée par le module Spring Core injecte les dépendances via des méthodes de constructeur ou de setter,
+  favorisant un couplage lâche et libérant les classes de la création et de la gestion des objets
+
+***L'inversion de contrôle (IoC)
+confie à Spring la gestion des objets de l'application en les créant et en organisant leurs dépendances,
+ce qui simplifie notre code et le rend plus flexible grace à l'injection de dépendances (DI) et à une configuration
+par fichier XML code Java ou annotations
+
+*** SPRING BEANS
+ce sont des objets instanciés et assembles par le conteneur Spring qui les injecte dans les classes qui en ont besoin
+
+***beans scope
+Un scope de bean dans Spring détermine le cycle de vie et la visibilité d'un bean dans l'application.
+permettant de contrôler combien d'instances sont créées et leur comportement spring offre six scopes
+(singleton, prototype, request, session, global-session, application)
+
+****Component Scanning
+ Fonctionnalité qui détecte et enregistre automatiquement les beans dans le contexte de l'application
+
+***Stereotype Annotations
+ Annotations indiquant le rôle d'une classe dans le contexte de Spring comme @Component @Service et @Controller
+
+***Spring Data JPA
+ Partie de Spring qui simplifie l'acces aux données en fournissant des interfaces pour interagir avec les bases de données via jpa
+
+***Spring MVC
+ Composant de Spring qui facilite le développement d'applications web avec une architecture Model-View-Controller
+
+***
