@@ -70,6 +70,11 @@ In Spring IoC (Inversion of Control) Container is the core of Spring Framework. 
 * Managing dependencies, 
 
 ### Spring Beans
+Here’s a definition of beans in the Spring Framework documentation:
+
+In Spring, the objects that form the backbone of my application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
+
+
 
 ### Bean Scopes
 
