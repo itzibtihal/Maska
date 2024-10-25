@@ -77,8 +77,29 @@ In Spring, the objects that form the backbone of my application and that are man
 
 
 ### Bean Scopes
+A Spring Bean Scope defines the lifecycle and visibility of a bean in a Spring container. When a bean is defined, it acts as a recipe for creating instances of a class, and you can control how many instances are created and how they behave. Spring provides six different scopes, four of which are specific to web-aware applications. You can also create custom scopes to manage how beans are instantiated and utilized. Scopes allow developers to configure the lifespan and accessibility of beans, without embedding this logic at the Java class level.
+
+![image](https://github.com/user-attachments/assets/b8fbbb56-01f2-4e37-9e52-c426c85e377c)
+
 
 ### ApplicationContext
+
+ApplicationContext is a central interface in the Spring Framework that provides configuration information to the application. It extends the BeanFactory interface, adding more advanced featuresuch as:
+
+* Bean lifecycle management and dependency injection.
+* Support for enterprise services like transactions, AOP (Aspect-Oriented Programming), and event propagation.
+* Internationalization (i18n) support for message resources.
+* Access to various kinds of resources, such as URLs or files.
+* Integration with web applications through specialized contexts (like WebApplicationContext).
+
+  There are several types of configuration in Spring:
+
+* XML Configuration: Beans are defined in an external XML file, such as applicationContext.xml.
+* Annotation-based Configuration: Uses annotations like @Component, @Autowired, and @Service directly in the Java code to manage beans and dependencies.
+* Java-based Configuration: Beans are configured using Java classes annotated with @Configuration and @Bean, offering more flexibility.
+* Mixed Configuration: Combines XML, annotations, and Java-based approaches as needed in a single application.
+
+
 
 ### Component Scanning and Stereotype Annotations
 
